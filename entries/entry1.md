@@ -1,10 +1,9 @@
 # <center>Entry 1: Where do I begin </center>
 
-### <strong>Choosing a Topic</strong>
-  
-They say the hardest part of any project is getting started, that the "journey of a thousand miles begins with a single step". Except if there is anything this week has taught me, the most obvious lesson is that the hardest part is not just starting, but knowing WHERE to start. 
+## <strong>Choosing a Topic</strong>
 
-With this being my first time being in charge of my own learning for my own project, knowing I had the freedom to learn whatever I want was quite overwhelming. Therefore, this whole week focused on finding what I should learn, and so I began my research to find a topic
+#### <strong>Overview</strong>
+They say the hardest part of any project is getting started, that the "journey of a thousand miles begins with a single step". Except if there is anything this week has taught me, the most obvious lesson is that the hardest part is not just starting, but knowing WHERE to start. With this being my first time being in charge of my own learning for my own project, knowing I had the freedom to learn whatever I want was quite overwhelming. Therefore, this whole week focused on finding what I should learn, and so I began my research to find a topic.
 
 I started out looking into the languages that are required of a software engineer at the most popular companies. Being that software engineering is a passion I wish to pursue, it seemed to make the most sense to me. 
 
