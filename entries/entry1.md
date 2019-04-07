@@ -15,7 +15,7 @@ That all languages generally share the same concepts on the surface, and are unq
 
 This became an outstanding epiphany, as I realized that my importance should not be placed upon the language itself, but more on what you wish to build and what language you can use to build it. 
 
-So, at last, I decided to possibly save machine learning and javascript for later and instead set my sights on what I want to build next.  
+So, at last, I decided to possibly save machine learning and javascript for later and instead set my sights on what I want to build next... Which I still needed to think about. 
 
 <strong>Takeaways</strong>    
 Many languages share key concepts, if you want to find which one to learn, discover what makes it unique and then you will find one that interests you. 
