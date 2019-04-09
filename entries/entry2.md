@@ -142,7 +142,7 @@ I'm doing the best I can in ruby, especially since it's a language that I am fam
 ### Takeaways 
 
 1. ALWAYS COMMIT (at least when things are working)
-In life, commitment is the key to victory. As said by Self-made millionaire and world renown life coach, Tony Robbins: "There is no abiding success without commitment." However, When coding I this: "There is no lasting success, without git commits" It is crucial to save your progress the moment you make even the slightest of breakthroughs to make a checkpoint you can go back to in case you break things again.
+In life, commitment is the key to victory. As said by self-made millionaire and world renown life coach, Tony Robbins: "There is no abiding success without commitment." However, when coding this: "There is no lasting success, without git commits" It is crucial to save your progress the moment you make even the slightest of breakthroughs to make a checkpoint you can go back to in case you break things again.
 
 2. Progress is not always visible
 For a while, I thought that as long as my final product is not finished, or even progressing, I'm wasting time. However, failure shouldn't be seen as a waste of time because but instead time that brings you closer to success
