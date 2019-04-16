@@ -1,4 +1,4 @@
-
+#Week Three: To the basics!
 ### Overview
 Last week, I finalized my topic decision for my nine-week independent study, the Google Calendar API, and immediately began trying to create my final product, an auto-scheduler.  I instantly started to run into a plethora of issues, usually regarding a 401 error (401 error or Unauthorized error means that the credentials that were entered were invalid for some reason and you aren't authorized to make that request), which I couldn't come to solve. Just before I was going to seek answers by posting on online forums, it occurred to me that I should do the best I could to understand the Google Calendar API as a whole, to go to the basics! (I wish I could say back to the basics, but in reality, I never went to the basics in the first place, so there's that) So week three was exploring the basic concepts of the Google Calendar API, answering as many fundamental questions as I can.
 
