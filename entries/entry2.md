@@ -1,5 +1,5 @@
 
-# GOOGLE CALENDAR API
+# Week Two: GOOGLE CALENDAR API
 
 ### Overview
 I spent the first week of my independent study contemplating what language I should learn, but in seeing that all languages are just tools to create something I realized that the focus of the topic for my project should be less about what I was going to use to code and more about what I wanted to make. 
