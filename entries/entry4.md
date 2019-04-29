@@ -13,6 +13,26 @@ The main issue is that I fail to make this request, but the reason for this has 
 ### 1. Curl to ruby attempt- 401 error(unauthorized error) 
  One of the coolest things about Google APIs is its extentisve documentation, at least when compared to your average  API. Within the documentation was an example of how to make a direct HTTP request for the ‘free busy’ method. Which works perfectly on their website!
 
+The request:
+```
+POST https://www.googleapis.com/calendar/v3/freeBusy HTTP/1.1
+
+Authorization: Bearer [YOUR_ACCESS_TOKEN]
+Accept: application/json
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "id": "ir0rg8oqlk3fdgaq9avjlk1r0s@group.calendar.google.com"
+    }
+  ],
+  "timeMin": "2019-04-28T00:00:00-00:00",
+  "timeMax": "2019-04-30T00:00:00-00:00"
+}
+
+```
+
 
 The issue was getting this to work for ruby. I was familiar with making HTTP requests but not so familiar to make one for this project so suddenly. So using their example of making this request for curl, I used a [curl-to-ruby program](https://jhawthorn.github.io/curl-to-ruby/) which looked beautiful!  But didn’t work. It returned my first 401 error. I then realized that within my code in place of the access tokens and refresh tokens we're placeholders that said “Your_token”  that d were replaced with the actual tokens within the example but would need to be replaced when using the requests in your own code. I then tried using the knowledge of the authenticantion prrocess so I could make an authorizized requests by getting the tokens that are recieved within the quick start example. The quickstart example made a separate file with all of its credentials including the tokens. So I accessed them by reading the file, sorting through what was sytax and saving the tokens in an array like this
  ```
