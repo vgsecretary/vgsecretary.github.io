@@ -3,7 +3,7 @@ Last week I looked at the basics of the Google Calendar API and understanding it
 
 
 ## What I need
-Before we talk about what problems I’m facing, I think it's important to keep in mind what I’m trying to do. Being that I'm trying to create an auto scheduler for Google Calendar, as I stated previously, the most important piece of information to do this would be the times in which I am free on my schedule or have no events. With that information, I could look into creating a program to fit in daily tasks within the time that is avaiable. To find this information, however, would require the ‘free busy’ method of the google calencounteredendar API  which analyzes a specified time frame and returns all the times that are free or without events and all the times that are busy or filled with events. 
+Before we talk about what problems I’m facing, I think it's important to keep in mind what I’m trying to do. Being that I'm trying to create an auto scheduler for Google Calendar, as I stated previously, the most important piece of information to do this would be the times in which I am free on my schedule or have no events. With that information, I could look into creating a program to fit in daily tasks within the time that is avaiable. To find this information, however, would require the ‘free busy’ method of the google calendar API  which analyzes a specified time frame and returns all the times that are free or without events and all the times that are busy or filled with events. 
 
 ##  My problem(s)
 The main issue is that I fail to make this request, but the reason for this has varied each time. With each strategy, I try a new error is encouterred
@@ -14,7 +14,7 @@ The main issue is that I fail to make this request, but the reason for this has 
  One of the coolest things about Google APIs is its extentisve documentation, at least when compared to your average  API. Within the documentation was an example of how to make a direct HTTP request for the ‘free busy’ method. Which works perfectly on their website!
 
 The request:
-```
+```ruby
 POST https://www.googleapis.com/calendar/v3/freeBusy HTTP/1.1
 
 Authorization: Bearer [YOUR_ACCESS_TOKEN]
@@ -35,7 +35,7 @@ Content-Type: application/json
 
 
 The issue was getting this to work for ruby. I was familiar with making HTTP requests but not so familiar to make one for this project so suddenly. So using their example of making this request for curl, I used a [curl-to-ruby program](https://jhawthorn.github.io/curl-to-ruby/) which looked beautiful!  But didn’t work. It returned my first 401 error. I then realized that within my code in place of the access tokens and refresh tokens we're placeholders that said “Your_token”  that d were replaced with the actual tokens within the example but would need to be replaced when using the requests in your own code. I then tried using the knowledge of the authenticantion prrocess so I could make an authorizized requests by getting the tokens that are recieved within the quick start example. The quickstart example made a separate file with all of its credentials including the tokens. So I accessed them by reading the file, sorting through what was sytax and saving the tokens in an array like this
- ```
+ ```ruby
  access_token=[]
 File.open("token.yaml").each do |line|
      access_token << line
@@ -47,7 +47,7 @@ But even with the right tokens, still my request was unauthirized
 
 ### 2. ‘.methods’ and ‘.query_freebusy’ attempt- Missing parameters error 
 By using the method .method I found that you could call the free busy method on the service object within the quick start example which I tried using the same syntax from the list events request that was shown in the quick start example which returned the Time in parameter error which meant that it was not recognizing my parameters. So I tried to search it up online,  but there was very little documentation for it there was however documentation for Ruby on Rails like this 
-``` 
+```ruby 
 client.execute(
   :api_method => service.freebusy.query,
   :body => JSON.dump({
@@ -64,7 +64,7 @@ Nothing seems to be working I've done this for the past week and I admit it is d
 Though I have posted my own question on [StackOverflow](https://stackoverflow.com/questions/55895909/google-freebusy-api-method-returning-not-found-error)  
 
 ## My next steps 
-my next steps is 2 look into other methods that I can use to accomplish this and or learn a different language in order to interact with this API 
+my next steps is to look into other methods that I can use to accomplish this and or learn a different language in order to interact with this API 
 
 
 
