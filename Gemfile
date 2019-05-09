@@ -6,4 +6,5 @@ gem 'shotgun'
 gem 'dotenv'
 gem 'google-api-client'
 gem 'signet'
+gem 'pp'
 
