@@ -42,6 +42,7 @@ def self.duration
 def self.setDuration(duration)
         @@duration=duration
 end
+```
 
 
 With the utilization of classes it became quite easy to incorporate several calendars as well. As a class method could be created to act as the first step for all calendars. 
